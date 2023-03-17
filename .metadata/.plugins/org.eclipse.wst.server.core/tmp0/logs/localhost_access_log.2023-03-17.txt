@@ -16,3 +16,9 @@
 127.0.0.1 - - [17/Mar/2023:14:26:23 +0900] "GET / HTTP/1.1" 404 807
 0:0:0:0:0:0:0:1 - - [17/Mar/2023:14:26:23 +0900] "GET /ServletProject1/ HTTP/1.1" 200 1708
 0:0:0:0:0:0:0:1 - - [17/Mar/2023:14:26:36 +0900] "GET /ServletProject1/example1.do?inputName=%EC%9D%B4%EC%A7%84%EC%98%81&inputAge=30 HTTP/1.1" 200 41
+127.0.0.1 - - [17/Mar/2023:14:52:31 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:14:52:32 +0900] "GET /ServletProject1/servlet/edu.kh.servlet.controller.ServletEx2 HTTP/1.1" 404 875
+127.0.0.1 - - [17/Mar/2023:15:03:23 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [17/Mar/2023:15:04:08 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:15:04:08 +0900] "GET /ServletProject1/ HTTP/1.1" 200 3381
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:15:04:29 +0900] "GET /ServletProject1/example2.do?orderer=%EC%9D%B4%EC%A7%84%EC%98%81&type=ice&coffee=%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8&opt=shot2 HTTP/1.1" 200 245

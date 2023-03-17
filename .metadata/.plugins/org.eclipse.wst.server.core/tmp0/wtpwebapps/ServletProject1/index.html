@@ -36,5 +36,50 @@
         나이 : <input type="number" name="inputAge"> 
         <button type="submit">서버로 제출하기 </button>
     </form>
+
+
+    <br>
+    <h1>Get 방식 요청 및 응답</h1>
+    <pre>
+        Get 방식: 요청하는 주소 뒤에 
+        전달하려는 값을 key = value 형태로 붙여서 전달하는 방식 
+        http://localhost:8080/ServletProject1/example1.do?inputName=이진영&inputAge=30 
+        /프로젝트 이름        / 서비스요청주소 ? key=vlaue&key=value ... -> 전달하려는 값이 작성된 문자열 : queryString
+
+        - 장점 : 단순함,주소창에 값을 임의로 작성할수있다 
+        캐싱 가능 (요청 주소 시점 == 북마크,즐겨찾기,링크공유 )
+
+        - 단덤 : 보안에 취약함,글자수 제한이 있다.
+        * 검색,게시글,뉴스 공유 등을 이용할때 좋음 
+
+    </pre>
+<!-- method 속성: 데이터 전달 방식 지정 속성 -->
+
+    <form action="/ServletProject1/example2.do" method="get">
+    
+        주문자 : <input type="text" name="orderer"><br>
+        hot <input type="radio" name="type" value="hot">
+        ice <input type="radio" name="type" value="ice">
+
+        <br>
+        <br>
+
+        카페 : 
+        <select name="coffee">
+            <option>아메리카노</option>
+            <option>카페라떼</option>
+            <option>초코칩프라페</option>
+            <option>카푸치노</option>
+        </select>
+
+        <br>
+        <br>
+
+        옵션 : <br>
+        1샷 추가 <input type="checkbox" name="opt" value="shot1">
+        2샷 추가 <input type="checkbox" name="opt" value="shot2">
+        연하게  <input type="checkbox" name="opt" value="softly">
+        <button>주문하기</button>
+    </form>
 </body>
 </html>
